@@ -1,0 +1,247 @@
+*{
+    margin: 0; padding: 0;
+}
+
+body{
+    width: auto;
+}
+
+/* login panel block start */
+#li-container{
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	margin-top: 0px;
+}
+#li-container > div > form{
+	width: 60%;
+	height: auto;
+	margin: 25px auto;
+	border: 1px solid red;
+	border-radius: 50px;
+	padding: 50px;
+}
+.login-table{
+	width: 80%;
+	border: 1px solid red;
+	margin: 0 auto;
+    padding: 25px 0;
+}
+.login-table tr td{
+	text-align: left;
+	padding: 5px;
+}
+.signup-link{
+	text-align: center;
+	color: gray;
+}
+.login-table tr td h1{
+	text-align: center;
+	padding: 5px;
+}
+.login-table tr td input{
+	width: 80%;
+	line-height: 30px;
+	padding: 0 5px;
+	margin-left: 0;
+	border-radius: 5px;
+}
+/* login panel block end */
+
+.title{
+    text-align: center;
+	font-family: Hobo Std;
+	color: black;
+	font-size: 45px;
+	line-height: 50px;
+}
+
+
+.slogen{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Agency FB;
+    line-height: -10px;
+}
+
+#instruction-box > p{
+	padding:0 35px;
+}
+#instruction-box > button{
+	margin-left: 35%;
+	margin-top: 10%;
+}
+
+#timer{
+    text-align: right;
+    font-weight: normal;
+    font-family: Bookman Old Style;
+}
+
+#welcome-box{
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    height: auto;
+    padding: 50px 25px;
+}
+
+header{
+    height: 120px;
+    width: 100%;
+	padding-top: 35px;
+    background-color: plum;
+    border-bottom: 5px solid purple;
+    font-family: Agency FB;
+}
+#container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: ghostwhite;
+}
+
+section{
+    width: 75%;
+    height: auto;
+    margin: 50px auto;
+    /*float: right;*/
+}
+#quiz-box{
+    padding: 3% 10%;
+}
+
+h1, h2{
+    text-align: left;
+    font-family: Hobo Std;
+}
+
+form{
+    height: 200px;
+    padding: 10px 15px;
+}
+.next-btn > button{
+    margin-top: 40px;
+    margin-left: 3 5%;
+}
+
+#btn-box{
+    padding: 5% 15%;;
+}
+#btn-box > button{
+    width: 100%;
+}
+
+#score-box{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	padding: 35px 0 60px 0;
+	position: relative;
+}
+#score-box > h1{
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 15px;
+}
+#score-box > table{
+	width: 100%;
+	text-align: center;
+	border: 5px double purple;
+	padding: 15px;
+	font-size: 20px;
+}
+#score-box table tr td{
+	border: 1px solid lightgray;
+	padding: 5px 0;
+}
+
+.heading{
+	text-align:right;
+	font-weight: bold;
+	font-size: 22px;
+	width: 30%;
+	border: none;
+}
+
+#reset{
+	margin: 0 35%;
+	bottom: -20px;
+	position: absolute;
+}
+
+
+button{
+    border-radius: 5px;
+    background-color: plum;
+    border: 1px solid purple;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+button:hover{
+    background-color: #e5aee5;
+}
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+button:hover span {
+    padding-right: 25px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+footer{
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    border-top: 5px solid purple;
+    background-color: plum;
+    color: black;
+}
+footer p{
+    background-color: none;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: Agency FB;
+    font-weight: bold;
+    padding: 20px 0;
+}
+footer > p > a{
+    font-size: 20px;
+    color: white ;
+    font-style: bold;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    color: purple;
+}
+
+#bright{
+    color: antiquewhite;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}

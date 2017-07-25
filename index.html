@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Quiz App</h1>
+        <p class="slogen">Checkout Your Skills Here..!</p>
+    </header>
+
+       
+        <!--Question's box start from here-->
+        <section>
+			
+			<!--welcome block-->
+            <div id="welcome-box">
+                <h1 style="text-align:center;">Welcome To Quiz App <br><br> For Checkout Your Skills Click Below</h1> <br>   
+                <button onclick="welcomeFunc()"><span>Start Quiz</span></button>
+            </div>
+
+			<!-- quizes button box -->
+            <div id="btn-box">
+                <button onclick="startQuiz(0)">HTML Quiz</button><br> 
+                <button onclick="startQuiz(1)">CSS Quiz</button><br>
+                <button onclick="startQuiz(2)">JS Quiz</button>
+            </div>
+            
+			
+			<!-- quiz instructions -->
+			<div id="instruction-box">
+				<h1 id="quiz-name"></h1><br>
+				<h3>Instructions:</h3>
+				<p id="quiz-instructions"></p><br>
+				<button onClick="runQuiz()"><span>Start Now</span></button>
+			</div>
+			
+            
+
+            <!--quiz div start-->
+            <div id="quiz-box">
+            <div class="header">
+                <p id="timer">00:00</p>
+                <h1 class="question-number"></h1>
+                <h2 class="question"></h2>
+                
+            </div>            
+            <form name="form1">
+                <div class="answer">
+                    <input id="ans-one" type="radio" name="radioChoice" > <label for="ans-one"></label><br>
+                    <input id="ans-two" type="radio" name="radioChoice" > <label for="ans-two"></label><br>
+                    <input id="ans-three" type="radio" name="radioChoice" > <label for="ans-three"></label><br>
+                    <input id="ans-four" type="radio" name="radioChoice"  > <label for="ans-four"></label><br>
+                    <div class="next-btn"><button type="button" onclick="next()"><span> Next </span></button></div>
+                </div>
+            </form>
+            </div>  <!--quiz div end-->
+
+			<!-- quiz score box start -->
+			<div id="score-box">
+				<h1>Your Score</h1>
+				<table>
+					<tr>
+						<td class="heading">Correct Answer: </td>
+						<td id="corr-ans"></td>
+					</tr> 
+					<tr>
+						<td class="heading">Result: </td>
+						<td id="result"></td>
+					</tr>
+					<tr>
+						<td class="heading">Remarks: </td>
+						<td id="remarks"></td>
+					</tr>
+					<button id="reset" type="button" onClick="refresh()"><span>Try Again</span></button>
+				</table>
+			</div>
+			
+        <div id="scoreDiv">
+            <p id="result"> </p>
+
+        </div>
+
+        </section>
+
+<script src="js/app.js"></script>
+</body>
+<footer >
+        <p>Design & Developed By | <a href="https://github.com/tauheedraza43" >TauHeeD_RaZa</a> | 
+            <br>
+            Roll No:5209 , Batch: 4.1, &nbsp <span id="bright">Bright</span> 
+        </p>
+</footer>
+</html>
